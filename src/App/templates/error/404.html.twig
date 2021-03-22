@@ -1,0 +1,9 @@
+{% extends '@layout/default.html.twig' %}
+
+{% block title %}404 Not Found{% endblock %}
+
+{% block content %}
+    <h1>Oops!</h1>
+    <h2>Das ist komisch.</h2>
+    <p>Während des bearbeiten deines Requests ist uns ien Fehler unterlaufen: {% if info is defined %} {{ info }}{%  endif %}</p>
+{% endblock %}
